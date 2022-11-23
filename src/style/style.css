@@ -67,7 +67,7 @@ main {
 .sounds { 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 3.2rem;
 }
 
 .sounds button svg path:nth-child(1).active {
@@ -77,10 +77,20 @@ main {
   fill: var(--bg-card-light);
 }
 
-input[type='range'].active::-webkit-slider-thumb,
-input[type='range'].active {
+input[type='range'].active::-webkit-slider-thumb {
   background: var(--white);
 }
+
+#select-theme img {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+}
+
+/* Thema Dark
+
+
 
 
 
