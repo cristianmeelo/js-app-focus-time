@@ -53,6 +53,8 @@ body {
   display: grid;
   place-items: center;
   gap: 4.8rem;
+  animation: topdown .7s .8s backwards;
+   animation-delay: .2s;
 }
 
 .timer span {
@@ -90,6 +92,10 @@ input[type='range'].active {
   top: 5rem;
   right: 5rem;
   cursor: pointer;
+}
+
+#select-theme img:hover{
+   transform: scale(1.2);
 }
 
 /* Modo Dark */
@@ -153,11 +159,68 @@ button.coffee-shop,
 button.fireplace {
   position: relative;
   height: 152px;
+  animation: topdown .7s .8s backwards;
+}
+button.forest {
+ animation-delay: .4s;
+}
+
+button.forest:hover{
+   transform: scale(1.1);
+}
+
+button.rain {
+ animation-delay: .6s;
+}
+
+button.rain:hover{
+   transform: scale(1.1);
+}
+
+button.coffee-shop {
+ animation-delay: .8s;
+}
+
+button.coffee-shop:hover{
+   transform: scale(1.1);
+}
+
+button.fireplace {
+ animation-delay: .9s;
+}
+
+button.fireplace:hover{
+   transform: scale(1.1);
 }
 
 button {
   cursor: pointer;
 }
+
+
+@keyframes topdown {
+    0% {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes downtop {
+    0% {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 @media (min-width: 400px) and (max-width: 672px ) {
   .container {
@@ -171,10 +234,6 @@ button {
   .timer {
     margin-top: 50px;
   }
-
-
-
-
 }
 
 
