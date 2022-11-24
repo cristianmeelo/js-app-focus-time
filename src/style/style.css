@@ -49,7 +49,7 @@ body {
   display: none;
 }
 
-.time-wrapper{
+.timer-wrapper{
   display: grid;
   place-items: center;
   gap: 4.8rem;
@@ -159,6 +159,23 @@ button {
   cursor: pointer;
 }
 
+@media (min-width: 400px) and (max-width: 672px ) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sounds { 
+    gap: 4.2rem;
+    margin-bottom: 50px;
+  }
+
+  .timer {
+    margin-top: 50px;
+  }
+
+
+
+
+}
 
 
 
