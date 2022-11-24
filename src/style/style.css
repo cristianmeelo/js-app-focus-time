@@ -12,15 +12,17 @@
 }
 
 :root {
-  /*Thema light*/
+  /*Thema Light*/
   --bg-light: #ffffff;
   --fc-light: #323238;
   --bg-card-light: #E1E1E6;
   --bg-cardActive-light: #02799d;
 
-  /*Thema Darck*/
+  --input-active: #6523D8;
+
+  /*Thema Dark*/
   --bg-dark: #121212;
-  --text-dark: #fff;
+  --modo-dark: #fff;
   --fc-dark: #c4c4cc;
   --bg-card-dark: #29292e;
   --bg-card-active-dark: #0a3442;
@@ -29,20 +31,19 @@
 }
 
 body {
-  background-color: var(--bg-light);
-
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  transition: all 0.5s ease;
+  user-select: none;
 }
 
-main {
+.container {
   width: 100vw;
   height: 100vh;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
+
 
 .hide {
   display: none;
@@ -77,9 +78,12 @@ main {
   fill: var(--bg-card-light);
 }
 
-input[type='range'].active::-webkit-slider-thumb {
-  background: var(--white);
+
+input[type='range'].active::-webkit-slider-thumb,
+input[type='range'].active {
+  background: #00a8ff;
 }
+
 
 #select-theme img {
   position: absolute;
@@ -88,12 +92,71 @@ input[type='range'].active::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-/* Thema Dark
+/* Modo Dark */
 
+.dark-mode {
+   background: var(--bg-dark);
+   transition: all 0.6s ease-in-out;
+}
 
+.dark-mode .timer span {
+  color: var(--modo-dark);
+}
 
+.dark-mode .controls button svg path {
+  fill: var(--fc-dark);
 
+}
+.dark-mode .sounds button svg path:nth-child(1) {
+  fill: var(--bg-card-dark);
+}
+.dark-mode .sounds button svg path:nth-child(2) {
+  fill: var(--fc-dark);
+}
+.dark-mode .sounds button svg path:nth-child(1).active {
+  fill: var(--bg-card-active-dark);
+}
 
+.dark-mode input[type='range'].active,
+.dark-mode input[type='range'].active::-webkit-slider-thumb {
+  background: var(#00a8ff);
+
+}
+
+/*Input Range*/
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 96px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--modo-dark);
+  cursor: pointer;
+
+  position: absolute;
+  left: 26px;
+  bottom: 16px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--modo-dark);
+}
+
+button.forest,
+button.rain,
+button.coffee-shop,
+button.fireplace {
+  position: relative;
+  height: 152px;
+}
+
+button {
+  cursor: pointer;
+}
 
 
 
