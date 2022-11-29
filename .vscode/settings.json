@@ -18,7 +18,7 @@
   // workbench
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Soft",
 
   // prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
