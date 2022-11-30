@@ -29,7 +29,7 @@ body {
   color: var(--text-color);
 }
 
-nav {
+header {
   position: fixed;
   top: 6.4rem;
   right: 6.4rem;
@@ -37,6 +37,16 @@ nav {
 
 svg {
   fill: var(--color-fill);
+}
+
+.pause svg path,
+.play svg path ,
+.pause svg path ,
+.stop svg path ,
+.increase svg path ,
+.decrease svg path {
+  fill: var(--color-fill);
+  
 }
 
 .color {
@@ -90,12 +100,13 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3.2rem;
 
   margin-top: 4.8rem;
 }
 
 .play,
+.pause,
 .stop,
 .increase,
 .decrease {
@@ -103,6 +114,7 @@ svg {
 }
 
 .play:hover,
+.pause:hover,
 .stop:hover,
 .increase:hover,
 .decrease:hover {
@@ -198,4 +210,10 @@ button {
 .store-audio svg:hover,
 .fire-audio svg:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

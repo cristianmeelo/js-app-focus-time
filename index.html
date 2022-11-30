@@ -4,8 +4,12 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Temporizador estilo Pomodoro">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href=" https://cdn-icons-png.flaticon.com/512/7782/7782637.png" type="image/x-png">
+    
     <title>Focus Timer</title>
     <link rel="stylesheet" href="./style.css">
 
@@ -14,7 +18,7 @@
 
 <body>
 
-    <nav id="icon">
+    <header id="icon">
         <button class="sun hide">
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -31,7 +35,7 @@
                     fill="black" />
             </svg>
         </button>
-    </nav>
+    </header>
 
     <main>
         <div class="page">
@@ -52,17 +56,24 @@
                     </button>
 
                     <button class="pause hide">
-                        <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M6 32C6 17.6454 17.6454 6 32 6C46.3546 6 58 17.6454 58 32C58 46.3546 46.3546 58 32 58C17.6454 58 6 46.3546 6 32ZM32 10C19.8546 10 10 19.8546 10 32C10 44.1454 19.8546 54 32 54C44.1454 54 54 44.1454 54 32C54 19.8546 44.1454 10 32 10Z"
-                                fill="#02799d" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M26 22C27.1046 22 28 22.8954 28 24V40C28 41.1046 27.1046 42 26 42C24.8954 42 24 41.1046 24 40V24C24 22.8954 24.8954 22 26 22Z"
-                                fill="#02799d" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M38 22C39.1046 22 40 22.8954 40 24V40C40 41.1046 39.1046 42 38 42C36.8954 42 36 41.1046 36 40V24C36 22.8954 36.8954 22 38 22Z"
-                                fill="#02799d" />
-                        </svg>
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_303_25)">
+                            <path
+                                d="M24.0001 48C37.2548 48 48.0002 37.2548 48.0002 23.9999C48.0002 10.745 37.2548 0 24.0001 0C10.7454 0 0 10.7452 0 24.0001C0 37.255 10.7452 48 24.0001 48ZM24.0001 3.83996C35.116 3.83996 44.16 12.884 44.16 23.9999C44.16 35.1158 35.116 44.1599 24.0001 44.1599C12.8842 44.1599 3.84013 35.1158 3.84013 23.9999C3.84013 12.884 12.8832 3.83996 24.0001 3.83996Z"
+                                fill="#323238" />
+                            <path
+                                d="M19.5399 35.3203C20.8656 35.3203 21.94 34.2462 21.94 32.9203V14.6803C21.94 13.3546 20.8658 12.2802 19.5399 12.2802C18.2142 12.2802 17.1398 13.3544 17.1398 14.6803V32.9203C17.1398 34.2462 18.214 35.3203 19.5399 35.3203Z"
+                                fill="#323238" />
+                            <path
+                                d="M29.1398 35.3203C30.4655 35.3203 31.5399 34.2462 31.5399 32.9203V14.6803C31.5399 13.3546 30.4657 12.2802 29.1398 12.2802C27.8139 12.2802 26.7399 13.3546 26.7399 14.6803V32.9203C26.7399 34.2462 27.8141 35.3203 29.1398 35.3203Z"
+                                fill="#323238" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_303_25">
+                                <rect width="48" height="48" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
                     </button>
 
                     <button class="stop">
