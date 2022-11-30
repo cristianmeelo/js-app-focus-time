@@ -1,13 +1,11 @@
-import { elementes } from './elementes.js'
-import { darkMode } from './theme.js'
+import Sound from './sounds.js'
 import { Timer } from './timer.js'
-import { Controls } from './controls.js'
-
+import { darkMode } from './theme.js'
+import { elements } from './elements.js'
 
 const {
-  buttonLightTheme,
-  buttonDarkTheme,
-  selectTheme,
+  buttonNormalMode,
+  buttonDarkMode,
   buttonPlay,
   buttonPause,
   buttonStop,
@@ -27,25 +25,12 @@ const {
   volFire,
   minutesDisplay,
   secondsDisplay
- 
-} = elementes
-
-const controls = Controls ({
-  buttonPlay,
-  buttonPause,
-})
-
-darkMode ({
-  buttonLightTheme, 
-  buttonDarkTheme, 
-  selectTheme,
-})
+} = elements
 
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
-  timeTimerOut,
-  resetControls: controls.reset,
+  resetControl
 })
 
 const sound = Sound()
@@ -141,26 +126,3 @@ volStore.addEventListener('input', () => {
 volFire.addEventListener('input', () => {
   sound.fireAudio.volume = volFire.value
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
