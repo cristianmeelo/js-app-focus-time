@@ -1,23 +1,26 @@
-import {
+import { elementes } from './elementes.js'
+import { darkMode } from './theme.js'
+
+const {
+  buttonLightTheme,
+  buttonDarkTheme,
   selectTheme,
-  themeLight,
-  themeDark,
-  selectThemeConteiner,
   buttonPlay,
   buttonPause,
   buttonStop,
   minutesDisplay,
-  secondsDiplay } 
-  from './elementes.js'
+  secondsDiplay,
+} = elementes
 
-
-selectTheme.addEventListener('click', function() {
-  selectThemeConteiner.classList.toggle('dark-mode')
-  themeLight.classList.toggle('hide')
-  themeDark.classList.toggle('hide')
+darkMode ({
+  buttonLightTheme, 
+  buttonDarkTheme, 
+  selectTheme,
 })
 
-buttonPlay.addEventListener('click', function () {
+
+
+/*buttonPlay.addEventListener('click', function () {
   buttonPlay.classList.add('hide')
   buttonPause.classList.remove('hide')
 
@@ -32,7 +35,7 @@ buttonPause.addEventListener('click', function () {
 buttonStop.addEventListener('click', function () {
   buttonPlay.classList.remove('hide')
   buttonPause.classList.add('hide')
-})
+})*/
 
 
 

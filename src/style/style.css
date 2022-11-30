@@ -37,6 +37,18 @@ body {
   
 }
 
+#select-theme {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  cursor: pointer;
+  transition: .3s;
+  
+}
+#select-theme:hover{
+   transform: scale(1.2);
+}
+
 main {
   transition: all 0.5s ease;
 }
@@ -90,19 +102,6 @@ input[type='range'].active {
   background: #00a8ff;
 }
 
-
-#select-theme img {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  cursor: pointer;
-  
-}
-
-#select-theme img:hover{
-   transform: scale(1.2);
-}
-
 /* Modo Dark */
 
 .dark-mode {
@@ -133,6 +132,22 @@ input[type='range'].active {
 .dark-mode input[type='range'].active::-webkit-slider-thumb {
   background: var(#00a8ff);
 
+}
+
+.play,
+.pause,
+.stop,
+.plus,
+.less {
+  transition: .1s;
+}
+
+.play:hover,
+.pause:hover,
+.stop:hover,
+.plus:hover,
+.less:hover {
+  transform: scale(1.1);
 }
 
 /*Input Range*/
@@ -166,9 +181,10 @@ button.fireplace {
   position: relative;
   height: 152px;
   animation: topdown .7s .8s backwards;
+  transition: .4s;
 }
 button.forest {
- animation-delay: .4s;
+ animation-delay: .3s;
 }
 
 button.forest:hover{
