@@ -9,7 +9,7 @@ const buttonStop = document.querySelector('.stop')
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDiplay = document.querySelector('.minutes')
 
-export const elementes =  {
+export const elementes = {
   buttonLightTheme,
   buttonDarkTheme,
   selectTheme,
@@ -18,5 +18,4 @@ export const elementes =  {
   buttonStop,
   minutesDisplay,
   secondsDiplay,
-  
 }
