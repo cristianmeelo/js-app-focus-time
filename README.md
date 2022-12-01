@@ -17,7 +17,7 @@
 
 - Projeto disponível no 🔗 [desse link](https://luizgmachado.github.io/FocusTime/). 
 
-- Figma do projeto disponível no [**Link**] 🔗 [Figma](https://www.figma.com/file/XoEy9LwIv3snZntgVqXgbA/Stage-05---Dark-Mode-FocusTimer-(Copy)?node-id=0%3A1&t=D6mSRBpsFyY6dX6H-0)
+- Figma do projeto disponível no 🔗 [Figma](https://www.figma.com/file/XoEy9LwIv3snZntgVqXgbA/Stage-05---Dark-Mode-FocusTimer-(Copy)?node-id=0%3A1&t=D6mSRBpsFyY6dX6H-0)
 
 ![image](https://user-images.githubusercontent.com/108701750/204933068-1e82d810-241a-4b1d-b755-92c9b90b455c.png)
 
