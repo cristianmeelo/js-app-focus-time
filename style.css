@@ -244,11 +244,11 @@ button {
 
     flex-direction: column;
     width: 80%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 13rem;
+    margin-bottom: 5rem;
     min-width: 100vw;
 
-    gap: 7rem;
+    gap: 6rem;
   }
 }
 
