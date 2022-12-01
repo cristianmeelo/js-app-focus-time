@@ -5,6 +5,9 @@
 }
 
 :root {
+
+  font-size: 62.5%;
+
   --bg-color: #ffffff;
   --text-color: #323238;
   --bg-card-color: #e1e1e6;
@@ -12,7 +15,6 @@
   --color-fill: #323238;
   --bg-fill-click: white;
 
-  font-size: 62.5%;
 }
 
 .dark-theme {
@@ -27,6 +29,12 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  user-select: none;
 }
 
 header {
@@ -212,8 +220,40 @@ button {
   transform: scale(1.1);
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
-  .nav {
+@media (min-width: 320px) and (max-width: 425px)  {
+
+  :root{
+    margin: 0;
+  }
+
+  .icon {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    min-width: 100vw;
+
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 672px) {
+  .container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
