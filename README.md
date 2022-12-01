@@ -15,30 +15,25 @@
 
 ### 🔖 Layout
 
-Você pode visualizar o layout do projeto através 🔗 [desse link](https://luiz-gustavo-machado.github.io/NLW-eSPORTS/).
+Você pode visualizar o layout do projeto através 🔗 [desse link](https://luizgmachado.github.io/FocusTime/). 
+Projeto no 🔗 [Figma](https://www.figma.com/file/XoEy9LwIv3snZntgVqXgbA/Stage-05---Dark-Mode-FocusTimer-(Copy)?node-id=0%3A1&t=D6mSRBpsFyY6dX6H-0)
 
-![image](https://user-images.githubusercontent.com/108701750/190295166-6f0144e2-84fd-4c8c-87cc-a15450d54e85.png)
+![image](https://user-images.githubusercontent.com/108701750/204933068-1e82d810-241a-4b1d-b755-92c9b90b455c.png)
 
 #
 
 ### 🚀 Tecnologias
 
-> Esse projeto realizado no Evanto Nex Level Week eSports Trilha Explore com as seguintes tecnologias:
-
 - HTML
 - CSS
-
-> Fiz modificaçoes com a minha identidade: 
-
-- Slides com JavaScript 
-- Luzes RGB com CSS
-
+- JavaScript 
+- ES6 Modules
 
 #
 
 ### 💻 Projeto
 
-> O Projeto desenvolvido é uma aplicação voltada para Games destacarem seus melhores jogos e streamings favoritos
+> O Projeto desenvolvido com introdução ao ES6 Modules, exportando as principais funcionalidades do nosso projeto para contextos diferentes e entendermos a motivação para isso.
 
 #
 
