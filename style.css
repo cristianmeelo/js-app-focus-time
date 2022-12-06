@@ -245,10 +245,14 @@ button {
     flex-direction: column;
     width: 80%;
     margin-top: 13rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     min-width: 100vw;
 
-    gap: 6rem;
+    gap: 2rem;
+  }
+
+  .controls {
+    margin-top: 1rem ;
   }
 }
 
