@@ -11,19 +11,25 @@
   </tr>
 </table>
 
-![](https://github.com/cristianmeelo/js-app-focus-time/blob/main/thumbnail-en.png?raw=true#vitrinedev)
+![](https://github.com/cristianmeelo/js-app-focus-time/blob/main/thumbnail-en.png?raw=true)
+
+![](https://github.com/cristianmeelo/js-app-focus-time/blob/main/thumbnail-mockup.png?raw=true#vitrinedev)
+
+<div align="center">
+<a href="https://js-app-focus-time-f6nait2yk-cristianmeelo.vercel.app/">
+  <img src="https://img.shields.io/badge/-CHECK%20HERE-lightblue"
+  alt="Image App" >
+</a>
+</div>
+
+<br/>
 
 # Focus Time
 
 This is a pomodoro timer 🍅 application, forked by my professional colleague [Luis Machado](https://github.com/luizgmachado/FocusTime) with ambient background sound options to help you focus with the scenario you find convenient.
 
-<img src="screencapture.png" alt="Image App" >
-<div align="center">
-<a href="https://js-app-focus-time-f6nait2yk-cristianmeelo.vercel.app/">
-  <img src="https://img.shields.io/badge/-check%20here-lightgrey"
-  alt="Image App" >
-</a>
-</div>
+
+
 
 ## 🔨 Project features
 
