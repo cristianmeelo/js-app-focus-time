@@ -3,112 +3,150 @@ import { Timer } from "./timer.js"
 import { darkMode } from "./theme.js"
 import { elements } from "./elements.js"
 
-const { buttonNormalMode, buttonDarkMode, buttonPlay, buttonPause, buttonStop, buttonIncrease, buttonDecrease, buttonForest, buttonRain, buttonStore, buttonFire, buttonEdm, svgForest, svgRain, svgStore, svgFire, svgEdm, volForest, volRain, volStore, volFire, volEdm, minutesDisplay, secondsDisplay } = elements
+const {
+  buttonNormalMode,
+  buttonDarkMode,
+  buttonPlay,
+  buttonPause,
+  buttonStop,
+  buttonIncrease,
+  buttonDecrease,
+  buttonForest,
+  buttonRain,
+  buttonStore,
+  buttonFire,
+  buttonEdm,
+  buttonBeach,
+  svgForest,
+  svgRain,
+  svgStore,
+  svgFire,
+  svgEdm,
+  svgBeach,
+  volForest,
+  volRain,
+  volStore,
+  volFire,
+  volEdm,
+  volBeach,
+  minutesDisplay,
+  secondsDisplay,
+} = elements
 
 const timer = Timer({
-	minutesDisplay,
-	secondsDisplay,
-	resetControl,
+  minutesDisplay,
+  secondsDisplay,
+  resetControl,
 })
 
 const sound = Sound()
 
 function togglePlay(myAudio) {
-	return myAudio.paused ? myAudio.play() : myAudio.pause()
+  return myAudio.paused ? myAudio.play() : myAudio.pause()
 }
 
 function resetControl() {
-	buttonPlay.classList.remove("hide")
-	buttonPause.classList.add("hide")
+  buttonPlay.classList.remove("hide")
+  buttonPause.classList.add("hide")
 }
 
 /* Button Timer */
 
 buttonPlay.addEventListener("click", () => {
-	buttonPlay.classList.add("hide")
-	buttonPause.classList.remove("hide")
-	sound.pressButton()
-	timer.countdown()
+  buttonPlay.classList.add("hide")
+  buttonPause.classList.remove("hide")
+  sound.pressButton()
+  timer.countdown()
 })
 
 buttonPause.addEventListener("click", () => {
-	resetControl()
-	sound.pressButton()
-	timer.hold()
+  resetControl()
+  sound.pressButton()
+  timer.hold()
 })
 
 buttonStop.addEventListener("click", () => {
-	resetControl()
-	sound.pressButton()
-	timer.stop()
+  resetControl()
+  sound.pressButton()
+  timer.stop()
 })
 
 buttonIncrease.addEventListener("click", () => {
-	sound.pressButton()
-	timer.increment()
+  sound.pressButton()
+  timer.increment()
 })
 
 buttonDecrease.addEventListener("click", () => {
-	sound.pressButton()
-	timer.decrement()
+  sound.pressButton()
+  timer.decrement()
 })
 
 /* Button Cards Audio */
 
 buttonForest.addEventListener("click", () => {
-	buttonForest.classList.toggle("selected")
-	svgForest.classList.toggle("color")
-	togglePlay(sound.forestAudio)
+  buttonForest.classList.toggle("selected")
+  svgForest.classList.toggle("color")
+  togglePlay(sound.forestAudio)
 })
 
 buttonRain.addEventListener("click", () => {
-	buttonRain.classList.toggle("selected")
-	svgRain.classList.toggle("color")
-	togglePlay(sound.rainAudio)
+  buttonRain.classList.toggle("selected")
+  svgRain.classList.toggle("color")
+  togglePlay(sound.rainAudio)
 })
 
 buttonStore.addEventListener("click", () => {
-	buttonStore.classList.toggle("selected")
-	svgStore.classList.toggle("color")
-	togglePlay(sound.storeAudio)
+  buttonStore.classList.toggle("selected")
+  svgStore.classList.toggle("color")
+  togglePlay(sound.storeAudio)
 })
 
 buttonFire.addEventListener("click", () => {
-	buttonFire.classList.toggle("selected")
-	svgFire.classList.toggle("color")
-	togglePlay(sound.fireAudio)
+  buttonFire.classList.toggle("selected")
+  svgFire.classList.toggle("color")
+  togglePlay(sound.fireAudio)
 })
 
 buttonEdm.addEventListener("click", () => {
-	buttonEdm.classList.toggle("selected")
-	svgEdm.classList.toggle("color")
-	togglePlay(sound.edmAudio)
+  buttonEdm.classList.toggle("selected")
+  svgEdm.classList.toggle("color")
+  togglePlay(sound.edmAudio)
+})
+
+buttonBeach.addEventListener("click", () => {
+  buttonBeach.classList.toggle("selected")
+  svgBeach.classList.toggle("color")
+  togglePlay(sound.beachAudio)
 })
 
 /*  Button Theme */
 darkMode({
-	buttonDarkMode,
-	buttonNormalMode,
+  buttonDarkMode,
+  buttonNormalMode,
 })
 
 /* Event Volume */
 
 volForest.addEventListener("input", () => {
-	sound.forestAudio.volume = volForest.value
+  sound.forestAudio.volume = volForest.value
 })
 
 volRain.addEventListener("input", () => {
-	sound.rainAudio.volume = volRain.value
+  sound.rainAudio.volume = volRain.value
 })
 
 volStore.addEventListener("input", () => {
-	sound.storeAudio.volume = volStore.value
+  sound.storeAudio.volume = volStore.value
 })
 
 volFire.addEventListener("input", () => {
-	sound.fireAudio.volume = volFire.value
+  sound.fireAudio.volume = volFire.value
 })
 
 volEdm.addEventListener("input", () => {
-	sound.edmAudio.volume = volEdm.value
+  sound.edmAudio.volume = volEdm.value
+})
+
+volEdm.addEventListener("input", () => {
+  sound.BeachAudio.volume = volBeach.value
 })

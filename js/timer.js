@@ -1,18 +1,14 @@
-import Sound from './sounds.js'
+import Sound from "./sounds.js"
 
-export function Timer({
-  minutesDisplay,
-  secondsDisplay,
-  resetControl }) {
-
+export function Timer({ minutesDisplay, secondsDisplay, resetControl }) {
   let timerTimeOut
   let minutes = Number(minutesDisplay.textContent)
 
   function updateTimerDisplay(newMinutes, seconds) {
     newMinutes = newMinutes === undefined ? minutes : newMinutes
     seconds = seconds === undefined ? 0 : seconds
-    minutesDisplay.textContent = String(newMinutes).padStart(2, '0')
-    secondsDisplay.textContent = String(seconds).padStart(2, '0')
+    minutesDisplay.textContent = String(newMinutes).padStart(2, "0")
+    secondsDisplay.textContent = String(seconds).padStart(2, "0")
   }
 
   function stop() {
@@ -66,6 +62,6 @@ export function Timer({
     countdown,
     increment,
     decrement,
-    hold
+    hold,
   }
 }
